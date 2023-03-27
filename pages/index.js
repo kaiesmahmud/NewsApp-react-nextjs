@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import { News } from '@/components/News'
 import { PageNumbers } from '@/components/PageNumbers'
 import { Paginate } from '@/utils/Paginate'
