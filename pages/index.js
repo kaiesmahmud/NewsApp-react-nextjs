@@ -2,6 +2,7 @@ import { News } from '@/components/News'
 import { PageNumbers } from '@/components/PageNumbers'
 import { Paginate } from '@/utils/Paginate'
 import Head from 'next/head'
+
 import { useEffect, useState } from 'react'
 
 export default function Home() {

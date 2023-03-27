@@ -1,5 +1,4 @@
 import _ from 'lodash';
-import {AiOutlineLeft,AiOutlineRight} from 'react-icons/ai'
 
 export const PageNumbers = ({items, pageSize, currentPage, onPageChange}) => {
     const pageCount = items/pageSize;
