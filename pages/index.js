@@ -12,8 +12,9 @@ export default function Home({articles}) {
   const [currentPage, setCurrentPage] = useState(1)
   const pageSize = 10;
   useEffect(()=>{
+     // ---------scroll to top on page load---------------------------------------------
+    // window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
    setPosts(articles)
-
   },[])
   
   const handlePageChange = page => setCurrentPage(page) ;
