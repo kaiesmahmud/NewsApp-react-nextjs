@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"
 export const News = ({posts}) => {
   return (
-    <div className='mt-[100px] flex flex-col gap-8 justify-center items-center '>
+    <div className=' flex flex-col gap-8 justify-center items-center  h-full '>
         {
             posts.map((article,i) =>(
                 <motion.div

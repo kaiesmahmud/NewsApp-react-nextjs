@@ -1,7 +1,7 @@
 import _ from 'lodash';
 
 export const PageNumbers = ({items, pageSize, currentPage, onPageChange}) => {
-    
+
     const pageCount = items/pageSize;
     if(Math.ceil(pageCount) === 1 ) return null ;
     const pages = _.range(1, pageCount + 1);
@@ -18,7 +18,7 @@ export const PageNumbers = ({items, pageSize, currentPage, onPageChange}) => {
                     key={page}
                     onClick={()=> onPageChange(page)}
                     // aria-current="page"
-                    className={`relative cursor-pointer rounded transition-all ease-in  inline-flex items-center  px-4 py-2  font-semibold  focus:z-20  ${page === currentPage? 'z-10 bg-indigo-600 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600' : 'bg-gray-300  text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:outline-offset-0'}
+                    className={` cursor-pointer rounded transition-all ease-in  inline-flex items-center  px-4 py-2  font-semibold  ${page === currentPage? ' bg-indigo-600 text-white ' : 'bg-gray-300  text-gray-900 inset  hover:bg-gray-50 '}
                     `}
                 >
                     {page}

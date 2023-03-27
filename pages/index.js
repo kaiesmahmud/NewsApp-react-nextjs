@@ -38,10 +38,13 @@ export default function Home() {
         <div className='text-center mt-10'>
           <h1 className='text-xl lg:text-3xl font-semibold'>Nextjs - News App 2023</h1>
         </div>
+        <div>
+
          {
-          paginatePosts &&
-          <News posts={paginatePosts} />
+           paginatePosts &&
+           <News posts={paginatePosts} />
           }
+        </div>
          <PageNumbers
           items={posts.length}
           currentPage={currentPage}
