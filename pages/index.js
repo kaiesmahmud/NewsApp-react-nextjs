@@ -16,7 +16,8 @@ export default function Home() {
     const getPosts = async()=>{
       const data= await fetch(
         // 'https://jsonplaceholder.typicode.com/posts'
-        'https://newsapi.org/v2/everything?q=bitcoin&apiKey=d3d572148ab247a4b3dfe824bc3795d8'
+        // 'https://newsapi.org/v2/everything?q=bitcoin&apiKey=d3d572148ab247a4b3dfe824bc3795d8'
+        'https://newsapi.org/v2/everything?q=apple&from=2023-03-26&to=2023-03-26&sortBy=popularity&apiKey=d3d572148ab247a4b3dfe824bc3795d8'
         ).then(res=> res.json())
       setPosts(data.articles.filter(article => article.urlToImage))
     }
@@ -36,7 +37,7 @@ export default function Home() {
       </Head>
       <main className=' capitalize min-h-[100vh]'>
         <div className='text-center mt-10'>
-          <h1 className='text-xl lg:text-3xl font-semibold'>Nextjs - News App 2023</h1>
+          <h1 className='text-xl lg:text-3xl font-semibold mb-5'>Nextjs - News App 2023</h1>
         </div>
         <div>
 

@@ -18,7 +18,7 @@ export const PageNumbers = ({items, pageSize, currentPage, onPageChange}) => {
                     key={page}
                     onClick={()=> onPageChange(page)}
                     // aria-current="page"
-                    className={` cursor-pointer rounded transition-all ease-in  inline-flex items-center  px-4 py-2  font-semibold  ${page === currentPage? ' bg-indigo-600 text-white ' : 'bg-gray-300  text-gray-900 inset  hover:bg-gray-50 '}
+                    className={` cursor-pointer rounded transition-all ease-in  inline-flex items-center  px-4 py-2  font-semibold  ${page === currentPage? ' bg-indigo-600 text-white ' : 'bg-gray-200  text-gray-900 inset  hover:bg-gray-50 '}
                     `}
                 >
                     {page}
