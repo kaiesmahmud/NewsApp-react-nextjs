@@ -1,6 +1,7 @@
 import _ from 'lodash';
 
 export const PageNumbers = ({items, pageSize, currentPage, onPageChange}) => {
+    
     const pageCount = items/pageSize;
     if(Math.ceil(pageCount) === 1 ) return null ;
     const pages = _.range(1, pageCount + 1);

@@ -1,10 +1,15 @@
-
+import { motion } from "framer-motion"
 export const News = ({posts}) => {
   return (
     <div className='mt-[100px] flex flex-col gap-8 justify-center items-center '>
         {
             posts.map((article,i) =>(
-                <div key={i} className=" overflow-hidden flex flex-col justify-center items-start gap-5 max-w-[80vw] p-5 rounded bg-slate-200 text-justify" >
+                <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: false }}
+                key={i} 
+                className=" overflow-hidden flex flex-col justify-center items-start gap-5 max-w-[80vw] p-5 rounded bg-slate-200 text-justify" >
                         {
                             article.urlToImage && 
                             <div className='w-[100%] rounded overflow-hidden'>
@@ -18,7 +23,7 @@ export const News = ({posts}) => {
                         <p className='opacity-80 text-lg'>{article?.description || "no description"}</p>
                         <p className='text-xs opacity-75'>{article.content || "no content" }</p>
                         {/* <p className='font-bold text-xs'>{article.url}</p> */}
-                    </div>
+                    </motion.div>
             ) )
         }
     </div>

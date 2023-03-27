@@ -11,9 +11,8 @@ export default function Home() {
   const [currentPage, setCurrentPage] = useState(1)
   const pageSize = 10;
 
-  
-  
   useEffect(()=>{
+    // Get All the Articles Details 
     const getPosts = async()=>{
       const data= await fetch(
         // 'https://jsonplaceholder.typicode.com/posts'
