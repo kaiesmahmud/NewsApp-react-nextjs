@@ -9,7 +9,7 @@ export const News = ({posts}) => {
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: false }}
                 key={i} 
-                className=" overflow-hidden flex flex-col justify-center items-start gap-5 max-w-[80vw] p-5 rounded bg-slate-200 text-justify" >
+                className=" overflow-hidden flex flex-col justify-center items-start gap-5 max-w-[90vw] md:max-w-[70vw] p-5 rounded bg-slate-200 text-justify" >
                         {
                             article.urlToImage && 
                             <div className='w-[100%] rounded overflow-hidden'>
@@ -18,9 +18,9 @@ export const News = ({posts}) => {
                         }{
                             !article.urlToImage && <div>No image</div>
                         }
-                        <h1 className='font-bold'>{article?.title || "no title"}</h1>
+                        <h1 className='font-bold text-sm md:text-xl'>{article?.title || "no title"}</h1>
                         <p className='text-xs font-bold'>Author: {article.author || "no author" }</p>
-                        <p className='opacity-80 text-lg'>{article?.description || "no description"}</p>
+                        <p className='opacity-80 text-xs  md:text-lg'>{article?.description || "no description"}</p>
                         <p className='text-xs opacity-75'>{article.content || "no content" }</p>
                         {/* <p className='font-bold text-xs'>{article.url}</p> */}
                     </motion.div>
