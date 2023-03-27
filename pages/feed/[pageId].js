@@ -23,6 +23,7 @@ import Head from 'next/head'
                                 <img src={article.urlToImage} alt={article.title} className="w-full hover:scale-125 transition-all duration-200 ease-in" />
                             </div>
                         }
+                        
                         <h1 className='font-bold'>{article?.title || "no title"}</h1>
                         <p className='text-xs font-bold'>Author: {article.author || "no author" }</p>
                         <p className='opacity-80 text-lg'>{article?.description || "no description"}</p>

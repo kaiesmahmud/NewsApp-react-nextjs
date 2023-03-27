@@ -9,11 +9,7 @@ export const Navbar = () => {
             link:'/',
             name:'Home'
         },
-        {
-            id:2,
-            link:'/feed',
-            name:'feed'
-        },
+        
         {
             id:3,
             link:'/eom',
